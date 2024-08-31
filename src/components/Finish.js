@@ -16,7 +16,9 @@ const {points,highscore,dispatch,questions} = useQuiz();
         You scored <strong>{points}</strong> out of {maxpossiblepoints}  ({Math.ceil(percentage)} %)
     
     </p>
-    <span>HighScore  : <strong> {highscore} </strong> / {maxpossiblepoints}</span>
+    <div className="strong" >
+    <h4>   HighScore  : <strong> {highscore} </strong> / {maxpossiblepoints}</h4>
+    </div>
 
     <button className="btn btn-ui" onClick={()=>dispatch({type: "restart"})}>
 Restart
