@@ -7,25 +7,25 @@ import { useReducer, useEffect, useContext, createContext } from "react";
       "question": "Which is the most popular JavaScript framework?",
       "options": ["Angular", "React", "Svelte", "Vue"],
       "correctOption": 1,
-      "points": 10
+      "points": 20
     },
     {
       "question": "Which company invented React?",
       "options": ["Google", "Apple", "Netflix", "Facebook"],
       "correctOption": 3,
-      "points": 10
+      "points": 20
     },
     {
       "question": "What's the fundamental building block of React apps?",
       "options": ["Components", "Blocks", "Elements", "Effects"],
       "correctOption": 0,
-      "points": 10
+      "points": 20
     },
     {
       "question": "What's the name of the syntax we use to describe the UI in React components?",
       "options": ["FBJ", "Babel", "JSX", "ES2015"],
       "correctOption": 2,
-      "points": 10
+      "points": 20
     },
     {
       "question": "How does data flow naturally in React apps?",
@@ -36,13 +36,13 @@ import { useReducer, useEffect, useContext, createContext } from "react";
         "The developers decides"
       ],
       "correctOption": 0,
-      "points": 10
+      "points": 20
     },
     {
       "question": "How to pass data into a child component?",
       "options": ["State", "Props", "PropTypes", "Parameters"],
       "correctOption": 1,
-      "points": 10
+      "points": 20
     },
     {
       "question": "When to use derived state?",
@@ -53,7 +53,7 @@ import { useReducer, useEffect, useContext, createContext } from "react";
         "Whenever the state can be computed from another state variable"
       ],
       "correctOption": 3,
-      "points": 30
+      "points": 20
     },
     {
       "question": "What triggers a UI re-render in React?",
@@ -86,7 +86,7 @@ import { useReducer, useEffect, useContext, createContext } from "react";
         "When the new state depends on the previous state"
       ],
       "correctOption": 3,
-      "points": 30
+      "points": 20
     },
     {
       "question": "If we pass a function to useState, when will that function be called?",
@@ -97,13 +97,13 @@ import { useReducer, useEffect, useContext, createContext } from "react";
         "The first time we update the state"
       ],
       "correctOption": 2,
-      "points": 30
+      "points": 20
     },
     {
       "question": "Which hook to use for an API request on the component's initial render?",
       "options": ["useState", "useEffect", "useRef", "useReducer"],
       "correctOption": 1,
-      "points": 10
+      "points": 20
     },
     {
       "question": "Which variables should go into the useEffect dependency array?",
@@ -114,7 +114,7 @@ import { useReducer, useEffect, useContext, createContext } from "react";
         "All variables needed for clean up"
       ],
       "correctOption": 2,
-      "points": 30
+      "points": 20
     },
     {
       "question": "An effect will always run on the initial render.",
@@ -125,7 +125,7 @@ import { useReducer, useEffect, useContext, createContext } from "react";
         "In depends on the code in the effect"
       ],
       "correctOption": 0,
-      "points": 30
+      "points": 20
     },
     {
       "question": "When will an effect run if it doesn't have a dependency array?",
