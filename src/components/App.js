@@ -9,6 +9,7 @@ import Progress from './Progress';
 import Finish from './Finish.js'
 import Footer from './Footer.js';
 import Timer from './Timer.js';
+import Contact from '../components/Contact.js'
 import { useQuiz } from '../contexts/QuizContext.js';
 
 
@@ -38,6 +39,8 @@ import { useQuiz } from '../contexts/QuizContext.js';
          }
         { status==='finished'&& <Finish />}
       </Main>
+      <h1>Contact Saksham :</h1>
+        <Contact/> 
        
     </div>
   );

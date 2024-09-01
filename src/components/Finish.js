@@ -1,5 +1,4 @@
 import { useQuiz } from "../contexts/QuizContext";
-
 export default function Finish()
 {
 const {points,highscore,dispatch,questions} = useQuiz();
@@ -22,6 +21,8 @@ const {points,highscore,dispatch,questions} = useQuiz();
 
     <button className="btn btn-ui" onClick={()=>dispatch({type: "restart"})}>
 Restart
-        </button>    
+        </button>   
+
+        
     </>)
 }

@@ -45,6 +45,7 @@ body {
   width: 100%;
   max-width: 50rem; /* Adjusted for responsiveness */
   padding: 0 1.6rem; /* Added padding for smaller screens */
+  padding-bottom: 50px;
 }
 
 .app-header {
@@ -97,12 +98,15 @@ h4 {
 
 .strong h4{
   font-family: "'Open Sans', sans-serif";
+  padding-top:50px;
+  font-size:30px;
 }
 
 .start {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:auto;
 }
 
 .progress {
@@ -160,7 +164,8 @@ progress {
 .btn-ui {
   float: right;
   background-color: transparent;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom:2rem;
 
 }
 
@@ -198,7 +203,7 @@ progress {
   border-radius: 100px;
   text-align: center;
   padding: 2rem 0;
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 500;
   margin-bottom: 1.6rem;
 }
@@ -231,6 +236,7 @@ progress {
   border: 2px solid var(--color-dark);
   padding: 1.35rem 2.8rem;
   border-radius: 100px;
+  margin-bottom: 2rem;
 }
 
 .loader {
@@ -282,7 +288,7 @@ progress {
   }
   h2 {
     font-size: 3rem;
-    margin-left: 0;
+    margin-left: auto;
   }
   .main {
     width: 90%;
@@ -299,7 +305,7 @@ progress {
   h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    margin-left:3rem
+    margin-left:auto;
   }
   .app-header, .img {
     margin-bottom: 2rem;
@@ -323,7 +329,7 @@ progress {
   h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    margin-left: 11rem;
+    margin-left: auto;
   }
   .error, .result, .counter {
     font-size: 1.4rem;
