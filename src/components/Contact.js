@@ -7,7 +7,7 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+    emailjs.sendForm('service_um2ra3p', 'template_28n2cvy', form.current, 'gS259h1nh4kti93GF')
       .then((result) => {
           console.log(result.text);
           alert("Message sent successfully!");
@@ -16,10 +16,11 @@ function Contact() {
           alert("Failed to send message, please try again.");
       });
     
-    e.target.reset(); // Reset form after submission
+    e.target.reset();
   };
 
-  return (
+  return (<>
+    {<h1>Contact Me :</h1> }
     <form ref={form} onSubmit={sendEmail} style={formStyles}>
       <label style={labelStyles}>Name:</label>
       <input type="text" placeholder='Your Name?' name="user_name" style={inputStyles} required />
@@ -32,6 +33,7 @@ function Contact() {
 
       <input type="submit" value="Send" style={buttonStyles} />
     </form>
+  </>
   );
 }
 
@@ -52,7 +54,7 @@ const labelStyles = {
   marginBottom: '10px', // Increased margin for better spacing
   fontWeight: 'bold',
   fontSize: '2.3rem',
-  color:'white' // Increased font size for better readability
+  color:'black' // Increased font size for better readability
 };
 
 const inputStyles = {

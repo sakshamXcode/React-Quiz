@@ -16,13 +16,8 @@ const {points,highscore,dispatch,questions} = useQuiz();
     
     </p>
     <div className="strong" >
-    <h4>   HighScore  : <strong> {highscore} </strong> / {maxpossiblepoints}</h4>
+    <h2>   HighScore  : <strong> {highscore} </strong> / {maxpossiblepoints}</h2>
     </div>
-
-    <button className="btn btn-ui" onClick={()=>dispatch({type: "restart"})}>
-Restart
-        </button>   
-
-        
+    <button className="btn btn-ui" onClick={()=>dispatch({type: "restart"})}>Restart</button>   
     </>)
 }

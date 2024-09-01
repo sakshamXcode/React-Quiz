@@ -21,26 +21,34 @@ import { useQuiz } from '../contexts/QuizContext.js';
     <div className='app'>
       <Header />
 
-      <Main>
+    <Main>
+  {status === 'loading' && <Loader />}
+  {status === 'error' && <Error />}
+  {status === 'ready' && <StartScreen />}
+  
+  {status === "active" && (
+    <>
+      <Progress />
+      <Question />
+      <Footer>
+        <Timer />
+        <NextButton />
+      </Footer>
+    </>
+  )}
 
+  {status === 'finished' && (
 
-        {status === 'loading' && <Loader />}
-        {status === 'error' && <Error />}
-        {status === 'ready' && < StartScreen/>}
-        {status==="active"&& 
-        <>
-        <Progress/>
-        <Question  />
-        <Footer>
-          <Timer />
-         <NextButton /> 
-       </Footer>
-        </>
-         }
-        { status==='finished'&& <Finish />}
-      </Main>
-      <h1>Contact Saksham :</h1>
-        <Contact/> 
+      <Finish />
+
+  )}
+</Main>
+
+<Main>
+{status === 'finished' && (
+<Contact />
+  )}
+</Main>
        
     </div>
   );
